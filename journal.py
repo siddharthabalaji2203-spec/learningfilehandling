@@ -1,6 +1,6 @@
-    greeting  = "Hey! , What happened today ? "
-    print( greeting )
-    response = input()
-    file = open("journal.txt","a")
+greeting  = "Hey! , What happened today ? "
+print( greeting )
+response = input()
+with open("journal.txt","a") as file:
     file.write("---------" + "\n" + response + "\n")
-    file.close()
+
