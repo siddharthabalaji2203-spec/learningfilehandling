@@ -1,6 +1,6 @@
-Greeting  = " Hey! , What happened today ? "
-print( Greeting )
+greeting  = "Hey! , What happened today ? "
+print( greeting )
 response = input()
 file = open("journal.txt","a")
-add = file.write(\nresponse)
+file.write("---------" + "\n" + response + "\n")
 file.close()
